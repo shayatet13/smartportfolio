@@ -1,0 +1,99 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0px 20px;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid blue;
+}
+
+.container .heading h3 span{
+    font-weight: 100;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .box .dream img{
+    border: 2px solid green;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/*RESPONSES*/
+
+@media (max-width:769px) {
+    .container .box{
+        flex-direction: column;
+    }
+
+    .container .box .dream{
+        width: 100%;
+    }
+}
+
+@media (max-width:643px) {
+    .container .heading{
+        width: 100%;
+    }
+
+    .container .heading h3{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+.container .mainpage{
+    margin: 40px 0px 70px 0px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .mainpage a{
+    color: blue;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+}
